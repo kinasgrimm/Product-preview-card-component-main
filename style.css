@@ -1,0 +1,139 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'montserrat';
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.item-card {
+  width: 600px;
+  display: flex;
+  border-radius: 10px;
+  background-color: white;
+}
+.item-image {
+  width: 50%;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.item-info {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-type {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+.item-name {
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(212, 21%, 14%);
+}
+.item-description {
+  color: hsl(228, 12%, 48%);
+}
+.prices {
+  display: flex;
+  align-items: center;
+}
+.item-price {
+  font-family: 'Fraunces';
+  font-size: 32px;
+  margin-right: 17px;
+  color: hsl(158, 36%, 37%);
+}
+.item-old-price {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+.to-cart-button {
+  width: 100%;
+  padding: 10px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.to-cart-button:hover,
+.to-cart-button:focus {
+  background-color: hsl(212, 21%, 14%);
+  cursor: pointer;
+}
+
+.cart-icon {
+  margin-right: 8px;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+  }
+  .item-card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+  }
+  .item-image {
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .item-info {
+    padding: 30px;
+  }
+
+  .item-type {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .item-name {
+    font-family: 'Fraunces';
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .item-description {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .prices {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .item-price {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .cart-icon {
+    margin-right: 8px;
+  }
+}
